@@ -1,0 +1,180 @@
+/* -*- css-indent-offset: 2 -*- */
+
+/* bardzo nie chcę potem jakkolwiek naprawiać tego kodu
+ * niektórzy twierdzą, że perl jest write-only
+ * dla mnie osobiście css jest dużo bardziej... write only */
+
+:root {
+  --c1: #222323;
+  --c2: #f0f6f0;
+  --bg: var(--c2);
+  --fg: var(--c1);
+
+  --font-big: 3.5em;
+  --font-normal: 1.4em;
+  --font-small: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --font-big: 1.8em;
+    --font-normal: 1.5em;
+    --font-small: 1.2em;
+  }
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'xanh';
+  src: url('res/fonts/xanhmono-regular-webfont.woff2') format('woff2'),
+       url('res/fonts/xanhmono-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'xanh';
+  src: url('res/fonts/xanhmono-italic-webfont.woff2') format('woff2'),
+       url('res/fonts/xanhmono-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'asset';
+  src: url('res/fonts/asset-regular-webfont.woff2') format('woff2'),
+       url('res/fonts/asset-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--fg);
+  font-family: xanh;
+}
+
+html, body {
+  background-color: var(--bg);
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.coffee-box {
+  clear: both;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.coffee-box .title {
+  transform: rotate(-3deg);
+  width: max-content;
+  max-width: 100%;
+}
+
+body h1 {
+  font-family: asset;
+  font-size: var(--font-big);
+  letter-spacing: 1rem;
+  width: 100%;
+}
+
+body p {
+  font-size: var(--font-normal);
+}
+
+@media only screen and (min-width: 768px) {
+  body p {
+    width: 60%;
+  }
+}
+
+.coffee-box .title h2 {
+  font-family: asset;
+  font-size: var(--font-big);
+  letter-spacing: 1rem;
+  transform: rotate(3deg);
+  width: 100%;
+}
+
+.coffee-box span {
+  font-size: var(--font-small);
+  margin-bottom: 1em;
+}
+
+.beans {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 2.5em;
+  top: 0.8em;
+}
+
+.bean {
+  height: 100%;
+  position: relative;
+  margin-left: -1.5em;
+}
+
+.bean:first-child {
+  margin-left: 0;
+}
+
+
+.coffee-box p {
+  font-size: 1.4em;
+}
+
+@media only screen and (min-width: 768px) {
+  .coffee-box .image {
+    float: right;
+    max-width: 30%;
+  }
+}
+
+.coffee-box .image {
+  display: block;
+}
+
+.image img {
+  max-width: 100%;
+  /* max-height: 100%; */
+  width: auto;
+  height: auto;
+}
+
+.image span {
+  cursor: pointer;
+  margin-top: 0.5em;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.image span:hover {
+  color: var(--bg);
+  background: var(--fg);
+}
+
+/* a { */
+/*   padding-left: */
+/*   text-decoration: none; */
+/* } */
+
+/* a:before { */
+/*   margin: 0; */
+/*   padding: 0; */
+/*   content: "["; */
+/* } */
+
+/* a:after { */
+/*   margin: 0; */
+/*   padding: 0; */
+/*   content: "]"; */
+/* } */
