@@ -146,8 +146,8 @@
           ,(format #f "[zdjęcie zditherowane. kliknij by pobrać całość (~a)]" fsize)))))
    l))
 
-(define (make-box opinion)
-  `((div (class . "coffee-box"))
+(define (make-box id opinion)
+  `((div (class . "coffee-box") (id . ,id))
     ((div (class . "title") (style . ,(str "background: " (car (get opinion 'tint "black")))))
      (h2 ,(get opinion 'on "oops!")))
     ((div (class . "image"))
@@ -166,9 +166,15 @@
         ())
     ))
 
+(define (map2 f a b)
+  (if (null? a)
+      ()
+      (cons (f (car a) (car b)) (map2 f (cdr a) (cdr b)))))
+
 (λ (_)
   (start-gensym)
-  (let ((f (open-output-file "public/index.html")))
+  (let ((f (open-output-file "public/index.html"))
+        (ids (map (λ (x) (x)) (make-list (length *opinions*) gensym))))
     (write-bytes
      f
      (string->bytes
@@ -187,7 +193,11 @@
              "personalnie — jako człowieku — na adres " (b "kpm+kawa@krzysckh.org") " tytułem "
              (b "„nie masz pojęcia co robisz”")
              " — na takie odpisuję najszybciej." (br) "— kpm")
-          ,@(map make-box *opinions*)
+          (br)
+          (p "spis \"treści\"")
+          (ul
+           ,@(map2 (λ (id op) `(li ((a (href . ,(str "#" id))) ,(get op 'on)))) ids *opinions*))
+          ,@(map2 make-box ids *opinions*)
           ((script (src . "app.js"))))))))
     (close-port f))
   0)
