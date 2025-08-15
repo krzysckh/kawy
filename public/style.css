@@ -1,4 +1,4 @@
-/* -*- css-indent-offset: 2 -*- */
+/* -*- mode: css; css-indent-offset: 2 -*- */
 
 /* bardzo nie chcę potem jakkolwiek naprawiać tego kodu
  * niektórzy twierdzą, że perl jest write-only
@@ -42,6 +42,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: 'asset';
   src: url('res/fonts/asset-regular-webfont.woff2') format('woff2'),
        url('res/fonts/asset-regular-webfont.woff') format('woff');
