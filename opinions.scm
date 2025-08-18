@@ -1,16 +1,12 @@
 (define *opinions*
   (list
-   (opinion on "HAYB SIE PRZELEWA Kwiat"
-     tint   is "#f0f"
-     rating is 10
-     image  is "HAYB.sieprzelewa.kwiat.jpg"
-     link   is "https://haybcoffee.pl/produkt/sie-przelewa-kwiat/"
+   (opinion on "COFFEEDESK Hi! — Holy Cup"
+     tint   is "#f791d2"
+     rating is 9
+     image  is ("COFFEEDESK.holycup1.jpg" "COFFEEDESK.holycup2.jpg")
+     link   is "https://www.coffeedesk.pl/product/29482/Hi-Coffeedesk-Holy-Cup-Filter-100G"
      brew   is drip
-     text   is ("genialna. "
-                "zdecydowany faworyt do wiosennego przelewu. "
-                "w smaku nierzadko herbaciana. "
-                "bardzo delikatna. przy parzeniu z większej ilości kawy zupełnie nie kwaśna, tylko lekuteńko gorzkawa. "
-                "zdecydowanie godna polecenia."))
+     text   is ("bardzo słodka. lekka."))
    (opinion on "HAYB SIE PRZELEWA Owoc"
      tint   is "#ec6b20"
      rating is 6
@@ -19,6 +15,17 @@
      brew   is drip
      text   is ("spoko, przyjemna, codzienna. lekko kwaskowa. "
                 "niestety cenowo taka sama jak kwiat, a — moim zdaniem — ma sporo uboższy smak, co odejmuje jej parę punktów"))
+   (opinion on "HAYB SIE PRZELEWA Kwiat"
+     tint   is "#fb46a2"
+     rating is 9
+     image  is "HAYB.sieprzelewa.kwiat.jpg"
+     link   is "https://haybcoffee.pl/produkt/sie-przelewa-kwiat/"
+     brew   is drip
+     text   is ("genialna. "
+                "zdecydowany faworyt do wiosennego przelewu. "
+                "w smaku nierzadko herbaciana. "
+                "bardzo delikatna. przy parzeniu z większej ilości kawy zupełnie nie kwaśna, tylko lekuteńko gorzkawa. "
+                "zdecydowanie godna polecenia."))
    (opinion on "BONORA Καφές Ελληνικός"
      tint   is "#919191"
      rating is 7
