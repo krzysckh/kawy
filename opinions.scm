@@ -1,5 +1,12 @@
 (define *opinions*
   (list
+   (opinion on "BRACIA ZIÓŁKOWSCY"
+     tint   is "#c96010"
+     rating is 7
+     image  is "ZIOLKOWSCY.szybki.jpg"
+     link   is "https://braciaziolkowscy.pl/produkt/kivu-szybki-przelew"
+     brew   is drip
+     text   is "Przyjemnie kwaskowa, miejscami gorzkawa. Bardzo smaczna.")
    (opinion on "COFFEEDESK Hi! — Holy Cup"
      tint   is "#f791d2"
      rating is 9
