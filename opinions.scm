@@ -1,6 +1,6 @@
 (define *opinions*
   (list
-   (opinion on "BRACIA ZIÓŁKOWSCY"
+   (opinion on "BRACIA ZIÓŁKOWSCY Kivu szybki przelew"
      tint   is "#c96010"
      rating is 7
      image  is "ZIOLKOWSCY.szybki.jpg"
