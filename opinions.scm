@@ -1,5 +1,13 @@
 (define *opinions*
   (list
+   (opinion on "BIESZCZADZKI WYPAŁ KAWY RYSIA"
+     tint   is "#7f352f"
+     rating is 7
+     image  is ("WYPALKAWY.rysia1.jpg" "WYPALKAWY.rysia2.jpg")
+     link   is "https://wypalkawy.pl"
+     brew   is drip
+     text   is ("Jeśli kawa z retorty w bieszczadzie to pułapka na turytsów, to chętnie nabiorę się na nią za każdym kolejnym razem. "
+                "Kawa super, miejsca genialne, urządzone ze smakiem."))
    (opinion on "BRACIA ZIÓŁKOWSCY Kivu szybki przelew"
      tint   is "#c96010"
      rating is 7
