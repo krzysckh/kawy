@@ -1,5 +1,13 @@
 (define *opinions*
   (list
+   (opinion on "PROSTO Z MŁYNKA Mazurski Blend"
+     tint   is "none; border: black 2px; border-style: dashed solid"
+     rating is 5
+     image  is ("PROSTOZMLYNKA.mazurski.blend1.jpg" "PROSTOZMLYNKA.mazurski.blend2.jpg")
+     link   is "https://www.facebook.com/prostozmlynka"
+     brew   is (espresso drip)
+     text   is ("Pułapka na turystów, na którą nie polecam się nabierać. Blend raczej mid, uchodzi jako espresso. "
+                "Z plusów dodatnich mało kwasu, z plusów ujemnych mało plusów dodatnich."))
    (opinion on "BIESZCZADZKI WYPAŁ KAWY RYSIA"
      tint   is "#7f352f"
      rating is 7
