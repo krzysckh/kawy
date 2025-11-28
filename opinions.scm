@@ -1,5 +1,12 @@
 (define *opinions*
   (list
+   (opinion on "HAYB MOCNA KURDE"
+     tint   is "#cf514e"
+     rating is 6
+     image  is "HAYB.mocna.kurde.jpg"
+     link   is "https://pantuniestal.com/kawa-mocna-kurde-hayb"
+     brew   is (espresso moka)
+     text   is "Mocna. Kurde.")
    (opinion on "PROSTO Z MŁYNKA Mazurski Blend"
      tint   is "none; border: black 2px; border-style: dashed solid"
      rating is 5
