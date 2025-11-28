@@ -149,6 +149,10 @@
           (ul
            ,@(map2 (λ (id op) `(li ((a (href . ,(str "#" id))) ,(get op 'on)))) ids *opinions*))
           ,@(map2 make-box ids *opinions*)
+
+          ((script (data-goatcounter . "https://kawy.goatcounter.com/count")
+                   (async . "true")
+                   (src . "//gc.zgo.at/count.js")))
           ((script (src . "app.js"))))))))
     (close-port f))
   0)
