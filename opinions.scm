@@ -1,5 +1,12 @@
 (define *opinions*
   (list
+   (opinion on "BIESZCZADZKI WYPAŁ KAWY LEŚNA"
+     tint   is "repeating-linear-gradient(45deg, #449933, #449933 50px, transparent 50px, transparent 100px)"
+     rating is 8
+     image  is "WYPALKAWY.lesna.jpg"
+     link   is "https://wypalkawy.pl/pl/p/LESNA-Brazylia-Cerrado/47"
+     brew   is drip
+     text   is "super kawka")
    (opinion on "HAYB MOCNA KURDE"
      tint   is "#cf514e"
      rating is 6
@@ -19,7 +26,7 @@
      tint   is "#7f352f"
      rating is 7
      image  is ("WYPALKAWY.rysia1.jpg" "WYPALKAWY.rysia2.jpg")
-     link   is "https://wypalkawy.pl"
+     link   is "https://wypalkawy.pl/pl/p/RYSIA-Etiopia-Guji/39"
      brew   is drip
      text   is ("Jeśli kawa z retorty w bieszczadzie to pułapka na turytsów, to chętnie nabiorę się na nią za każdym kolejnym razem. "
                 "Kawa super, miejsca genialne, urządzone ze smakiem."))
